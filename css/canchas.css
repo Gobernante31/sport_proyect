@@ -1,0 +1,122 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #282c35;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  background: #3a3e4a;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-icon {
+  display: flex;
+  align-items: center;
+}
+
+.container-icon a {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container-icon img {
+  margin-right: 10px;
+}
+
+.container-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #3a3e4a;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.inf-canchas {
+  padding: 15px;
+}
+
+h2 {
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f39c12;
+}
+
+.inf-canchas button {
+  border: none;
+  background: #4caf50;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.inf-canchas button:hover {
+  background-color: #4caf50;
+}
+
+.button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #4caf50;
+  transform: scale(1.05);
+}
+
+.close-session {
+  background-color: #ff5a5a;
+  border-radius: 1rem;
+}
+
+.close-session:hover {
+  background-color: #ff4242;
+}
